@@ -1,0 +1,282 @@
+Unhandled exception: divide by zero in 64-bit code (0x00000140072888).
+Register dump:
+ rip:0000000140072888 rsp:00007f44b039dc10 rbp:0000000140db3358 eflags:00210246 (  R- --  I  Z- -P- )
+ rax:0000000000000002 rbx:00007fffff00bd80 rcx:00007fffff00becc rdx:0000000000000000
+ rsi:0000000140db30a0 rdi:0000000140db30e0  r8:0000000000000000  r9:00007fffff00be78 r10:0000000000000000
+ r11:0000000000000000 r12:0000000140a31be0 r13:00007fffff007de0 r14:0000000000000026 r15:00007fffff00bd80
+Stack dump:
+0x007f44b039dc10:  00007f449580daa0 00007f44a010fc40
+0x007f44b039dc20:  0001b431001c0001 00007f44957473a0
+0x007f44b039dc30:  00007f4467a4e658 00007fffff00bd80
+0x007f44b039dc40:  00000000ffffffff 00007f449507c8c0
+0x007f44b039dc50:  00007f449580fb20 00007f44a010fc80
+0x007f44b039dc60:  0000ead1001c0001 00007f4495743880
+0x007f44b039dc70:  00007f44674b6448 0000000000000000
+0x007f44b039dc80:  00000000ffffffff 0000000140095deb
+0x007f44b039dc90:  00007f44952d3c80 00007f44b039dca8
+0x007f44b039dca0:  0000000000000001 00007f449507c8c0
+0x007f44b039dcb0:  00007f4495d140d0 00006ffffedf6db9
+0x007f44b039dcc0:  000000000000000a 00006ffffed26cf3
+Backtrace:
+=>0 0x00000140072888 in game (+0x72888) (0x00000140db3358)
+  1 0x00000140095deb in game (+0x95deb) (0x00ead1001c0001)
+  2 0x006ffffedf6db9 in x64-msvcrt-ruby310 (+0x276db9) (0x00ead1001c0001)
+  3 0x006ffffedfe26e in x64-msvcrt-ruby310 (+0x27e26e) (0x007f44a010fc80)
+  4 0x006ffffee1361b in x64-msvcrt-ruby310 (+0x29361b) (0x00000000000001)
+  5 0x006ffffecdc1c2 in x64-msvcrt-ruby310 (+0x15c1c2) (0x00000000000001)
+  6 0x006ffffedf6db9 in x64-msvcrt-ruby310 (+0x276db9) (0x00283100000001)
+  7 0x006ffffef26bd6 in x64-msvcrt-ruby310 (+0x3a6bd6) (0x007f446335b430)
+  8 0x006ffffee00036 in x64-msvcrt-ruby310 (+0x280036) (0x007f446335b430)
+  9 0x006ffffee1361b in x64-msvcrt-ruby310 (+0x29361b) (0x007f44a0010198)
+  10 0x006ffffee09bed in x64-msvcrt-ruby310 (+0x289bed) (0x007f44a0010198)
+  11 0x006ffffed33e16 in x64-msvcrt-ruby310 (+0x1b3e16) (0x00000000000002)
+  12 0x006ffffedf6db9 in x64-msvcrt-ruby310 (+0x276db9) (0x000bc100000001)
+  13 0x006ffffef26bd6 in x64-msvcrt-ruby310 (+0x3a6bd6) (0x007f446335b320)
+  14 0x006ffffee00036 in x64-msvcrt-ruby310 (+0x280036) (0x007f446335b320)
+  15 0x006ffffee13aff in x64-msvcrt-ruby310 (+0x293aff) (0x007f449507c8c0)
+  16 0x006ffffee0b7d2 in x64-msvcrt-ruby310 (+0x28b7d2) (0x007f449507c8c0)
+  17 0x006ffffec1e2cb in x64-msvcrt-ruby310 (+0x9e2cb) (0x0024a100040001)
+  18 0x006ffffec1e4d8 in x64-msvcrt-ruby310 (+0x9e4d8) (0x0024a100040001)
+  19 0x006ffffee0c1c2 in x64-msvcrt-ruby310 (+0x28c1c2) (0x0024a100040001)
+  20 0x006ffffedf6db9 in x64-msvcrt-ruby310 (+0x276db9) (0x0024a100040001)
+  21 0x006ffffef26bd6 in x64-msvcrt-ruby310 (+0x3a6bd6) (0x007f446464ab90)
+  22 0x006ffffee00036 in x64-msvcrt-ruby310 (+0x280036) (0x007f446464ab90)
+  23 0x006ffffee1361b in x64-msvcrt-ruby310 (+0x29361b) (0x00000000002451)
+  24 0x006ffffee0c46e in x64-msvcrt-ruby310 (+0x28c46e) (0x00000000002451)
+  25 0x006ffffee0658b in x64-msvcrt-ruby310 (+0x28658b) (0x00000000002451)
+  26 0x006ffffee087a7 in x64-msvcrt-ruby310 (+0x2887a7) (0x00000000000008)
+  27 0x006ffffee08f61 in x64-msvcrt-ruby310 (+0x288f61) (0x00000140db3358)
+  28 0x0000014007f8f9 in game (+0x7f8f9) (0x00000140db3358)
+  29 0x006ffffec1e654 in x64-msvcrt-ruby310 (+0x9e654) (0x00000140db3358)
+  30 0x000001400873b4 in game (+0x873b4) (0x00000140db3358)
+  31 0x000001400052e8 in game (+0x52e8) (0x007ffffed4c880)
+  32 0x000001403dea87 in game (+0x3dea87) (0x007ffffe2ff930)
+  33 0x000001404222ea in game (+0x4222ea) (0000000000000000)
+  34 0x0000007bba039f _beginthreadex_trampoline+0x3f(arg=00007FFFFED591E0) [/usr/src/packages/BUILD/dlls/msvcrt/thread.c:199] in msvcrt (0000000000000000)
+  35 0x006fffffa7a149 BaseThreadInitThunk+0x9(unknown=<internal error>, entry=<internal error>, arg=<internal error>) [/usr/src/packages/BUILD/dlls/kernel32/thread.c:61] in kernel32 (0000000000000000)
+  36 0x006fffffc7d38b in ntdll (+0x5d38b) (0000000000000000)
+0x00000140072888 game+0x72888: div 0x5fc(%rbx)
+Modules:
+Module  Address                                 Debug info      Name (143 modules)
+PE-Wine         73490000-        734b8000       Deferred        winepulse
+PE-Wine         734d0000-        735e7000       Deferred        mmdevapi
+PE-Wine         73600000-        73637000       Deferred        xinput1_4
+PE-Wine         73650000-        73684000       Deferred        hid
+PE-Wine         736a0000-        73bee000       Deferred        comctl32
+PE-Wine         73c00000-        73d54000       Deferred        dinput8
+PE-Wine         74320000-        743f2000       Deferred        uxtheme
+PE-Wine         74410000-        7471d000       Deferred        dbghelp
+PE-Wine         74730000-        74774000       Deferred        imagehlp
+PE-Wine         74790000-        747bd000       Deferred        wsock32
+PE-Wine         747d0000-        7484b000       Deferred        msacm32
+PE-Wine         74860000-        74a20000       Deferred        winmm
+PE-Wine         74a30000-        74a50000       Deferred        version
+PE-Wine         74a60000-        74c19000       Deferred        dsound
+PE-Wine         74c30000-        74c81000       Deferred        bcrypt
+PE-Wine         74ca0000-        7505a000       Deferred        crypt32
+PE-Wine         77910000-        77936000       Deferred        nsi
+PE-Wine         77950000-        7799a000       Deferred        dnsapi
+PE-Wine         779b0000-        77a40000       Deferred        iphlpapi
+PE-Wine         77b00000-        77b5d000       Deferred        winex11
+PE-Wine         77cd0000-        77d4d000       Deferred        imm32
+PE-Wine         77fc0000-        784c9000       Deferred        oleaut32
+PE-Wine         78690000-        786b0000       Deferred        midimap
+PE-Wine         786c0000-        786ec000       Deferred        msacm32
+PE-Wine         78700000-        78733000       Deferred        winealsa
+PE-Wine         78750000-        7889d000       Deferred        msctf
+PE-Wine         788b0000-        78e05000       Deferred        opengl32
+PE-Wine         78e20000-        78e3c000       Deferred        avrt
+PE-Wine         78e50000-        78ea4000       Deferred        shcore
+PE-Wine         78ec0000-        7900f000       Deferred        shlwapi
+PE-Wine         79020000-        79f2f000       Deferred        shell32
+PE-Wine         79f40000-        79f8f000       Deferred        coml2
+PE-Wine         79fe0000-        7a01f000       Deferred        win32u
+PE-Wine         7a030000-        7a268000       Deferred        setupapi
+PE-Wine         7a280000-        7a86b000       Deferred        user32
+PE-Wine         7a880000-        7ab3b000       Deferred        rpcrt4
+PE-Wine         7ab50000-        7ade3000       Deferred        gdi32
+PE-Wine         7ae00000-        7afaa000       Deferred        combase
+PE-Wine         7afc0000-        7b581000       Deferred        ole32
+PE-Wine         7b5a0000-        7b64a000       Deferred        ws2_32
+PE-Wine         7b660000-        7ba5b000       Deferred        ucrtbase
+PE-Wine         7ba70000-        7bb40000       Deferred        sechost
+PE-Wine         7bb50000-        7beab000       Dwarf-4         msvcrt
+PE-Wine         7bec0000-        7bfeb000       Deferred        advapi32
+PE             140000000-       140f00000       Export          game
+PE          6ffffeb80000-    6fffff3de000       Dwarf-5         x64-msvcrt-ruby310
+PE          6fffff3f0000-    6fffff414000       Deferred        zlib1
+PE-Wine     6fffff430000-    6fffffa3a000       Deferred        kernelbase
+PE-Wine     6fffffa50000-    6fffffc0c000       Dwarf-4         kernel32
+PE-Wine     6fffffc20000-    6ffffffe7000       Dwarf-4         ntdll
+ELF         7f449684a000-    7f449c000000       Deferred        libllvm-12.so.1
+ELF         7f44a0475000-    7f44a0570000       Deferred        libasound.so.2
+ELF         7f44a2475000-    7f44a4000000       Deferred        iris_dri.so
+ELF         7f44b0096000-    7f44b00ac000       Deferred        winealsa.so
+ELF         7f44b0737000-    7f44b074b000       Deferred        libnss_files.so.2
+ELF         7f44b074b000-    7f44b077b000       Deferred        libtinfo.so.6
+ELF         7f44b077b000-    7f44b07b3000       Deferred        libedit.so.2
+ELF         7f44b0995000-    7f44b09eb000       Deferred        libvulkan.so.1
+ELF         7f44b09eb000-    7f44b09f6000       Deferred        libdrm_nouveau.so.2
+ELF         7f44b09f6000-    7f44b0a02000       Deferred        libdrm_amdgpu.so.1
+ELF         7f44b0a02000-    7f44b0a1e000       Deferred        libelf.so.1
+ELF         7f44b0a1e000-    7f44b0a2d000       Deferred        libdrm_radeon.so.1
+ELF         7f44b0a2d000-    7f44b0a3e000       Deferred        libsensors.so.5
+ELF         7f44b0a3e000-    7f44b0ae7000       Deferred        libzstd.so.1
+ELF         7f44b0ae7000-    7f44b0af1000       Deferred        libxcb-xfixes.so.0
+ELF         7f44b0af1000-    7f44b0cf3000       Deferred        libxshmfence.so.1
+ELF         7f44b0cf3000-    7f44b0cfd000       Deferred        libxcb-sync.so.1
+ELF         7f44b0cfd000-    7f44b0d02000       Deferred        libxcb-present.so.0
+ELF         7f44b0d02000-    7f44b0d1f000       Deferred        libxcb-glx.so.0
+ELF         7f44b0d1f000-    7f44b0d5a000       Deferred        libglapi.so.0
+ELF         7f44b0d5a000-    7f44b0dd3000       Deferred        libglx_mesa.so.0
+ELF         7f44b0dd3000-    7f44b0e8b000       Deferred        libgldispatch.so.0
+ELF         7f44b0e8b000-    7f44b0f13000       Deferred        libgl.so.1
+ELF         7f44b1064000-    7f44b106b000       Deferred        libxcb-dri2.so.0
+ELF         7f44b106b000-    7f44b109f000       Deferred        libglx.so.0
+ELF         7f44b109f000-    7f44b11d0000       Deferred        opengl32.so
+ELF         7f44b13d0000-    7f44b13d6000       Deferred        libxcb-dri3.so.0
+ELF         7f44b13d6000-    7f44b13f9000       Deferred        libgpg-error.so.0
+ELF         7f44b13f9000-    7f44b14a4000       Deferred        libvorbisenc.so.2
+ELF         7f44b14a4000-    7f44b14d2000       Deferred        libvorbis.so.0
+ELF         7f44b14d2000-    7f44b14df000       Deferred        libogg.so.0
+ELF         7f44b14df000-    7f44b151d000       Deferred        libflac.so.8
+ELF         7f44b151d000-    7f44b153a000       Deferred        libnsl.so.1
+ELF         7f44b153a000-    7f44b1658000       Deferred        libgcrypt.so.20
+ELF         7f44b1658000-    7f44b1679000       Deferred        liblz4.so.1
+ELF         7f44b1679000-    7f44b16a2000       Deferred        liblzma.so.5
+ELF         7f44b16a2000-    7f44b16b7000       Deferred        libapparmor.so.1
+ELF         7f44b16b7000-    7f44b18bd000       Deferred        libasyncns.so.0
+ELF         7f44b18bd000-    7f44b193c000       Deferred        libsndfile.so.1
+ELF         7f44b193c000-    7f44b19eb000       Deferred        libsystemd.so.0
+ELF         7f44b19eb000-    7f44b1a3c000       Deferred        libdbus-1.so.3
+ELF         7f44b1a3c000-    7f44b1abe000       Deferred        libpulsecommon-13.99.so
+ELF         7f44b1abe000-    7f44b1b13000       Deferred        libpulse.so.0
+ELF         7f44b1b15000-    7f44b1b2b000       Deferred        libdrm.so.2
+ELF         7f44b1c61000-    7f44b1c66000       Deferred        libxcb-shm.so.0
+ELF         7f44b1c66000-    7f44b1c70000       Deferred        librt.so.1
+ELF         7f44b1e79000-    7f44b1e81000       Deferred        libxfixes.so.3
+ELF         7f44b1e81000-    7f44b1e8e000       Deferred        libxcursor.so.1
+ELF         7f44b1e8e000-    7f44b1ea0000       Deferred        libxi.so.6
+ELF         7f44b1ea0000-    7f44b1ea5000       Deferred        libxcomposite.so.1
+ELF         7f44b1ea5000-    7f44b1eb2000       Deferred        libxrandr.so.2
+ELF         7f44b1eb2000-    7f44b20bc000       Deferred        libxrender.so.1
+ELF         7f44b20bc000-    7f44b20c3000       Deferred        libxxf86vm.so.1
+ELF         7f44b20c3000-    7f44b20c8000       Deferred        libxinerama.so.1
+ELF         7f44b20c8000-    7f44b20e2000       Deferred        libbsd.so.0
+ELF         7f44b20e2000-    7f44b20ea000       Deferred        libxdmcp.so.6
+ELF         7f44b20ea000-    7f44b20f0000       Deferred        libxau.so.6
+ELF         7f44b20f0000-    7f44b211a000       Deferred        libxcb.so.1
+ELF         7f44b211a000-    7f44b2257000       Deferred        libx11.so.6
+ELF         7f44b2257000-    7f44b226c000       Deferred        libxext.so.6
+ELF         7f44b226c000-    7f44b22f2000       Deferred        winex11.so
+ELF         7f44b22f2000-    7f44b230e000       Deferred        libresolv.so.2
+ELF         7f44b230f000-    7f44b2314000       Deferred        libx11-xcb.so.1
+ELF         7f44b2314000-    7f44b2320000       Deferred        libwrap.so.0
+ELF         7f44b2320000-    7f44b2335000       Deferred        winepulse.so
+ELF         7f44b235b000-    7f44b2360000       Deferred        dnsapi.so
+ELF         7f44b2360000-    7f44b2367000       Deferred        ws2_32.so
+ELF         7f44b2367000-    7f44b236e000       Deferred        crypt32.so
+ELF         7f44b23f5000-    7f44b2423000       Deferred        libexpat.so.1
+ELF         7f44b2423000-    7f44b246a000       Deferred        libfontconfig.so.1
+ELF         7f44b246a000-    7f44b2486000       Deferred        libz.so.1
+ELF         7f44b2486000-    7f44b24be000       Deferred        libpng16.so.16
+ELF         7f44b24be000-    7f44b257d000       Deferred        libfreetype.so.6
+ELF         7f44b257d000-    7f44b26cc000       Deferred        libm.so.6
+ELF         7f44b26cc000-    7f44b2870000       Deferred        win32u.so
+ELF         7f44b2870000-    7f44b287c000       Deferred        libffi.so.7
+ELF         7f44b287c000-    7f44b2900000       Deferred        libgmp.so.10
+ELF         7f44b2900000-    7f44b2937000       Deferred        libhogweed.so.5
+ELF         7f44b2937000-    7f44b2971000       Deferred        libnettle.so.7
+ELF         7f44b2971000-    7f44b2af3000       Deferred        libunistring.so.2
+ELF         7f44b2af3000-    7f44b2c29000       Deferred        libp11-kit.so.0
+ELF         7f44b2c29000-    7f44b2dff000       Deferred        libgnutls.so.30
+ELF         7f44b3a4a000-    7f44b3a65000       Deferred        libgcc_s.so.1
+ELF         7f44b3a65000-    7f44b3b23000       Export          ntdll.so
+ELF         7f44b3b26000-    7f44b3d18000       Deferred        libc.so.6
+ELF         7f44b3d18000-    7f44b3d1e000       Deferred        libdl.so.2
+ELF         7f44b3d1e000-    7f44b3d41000       Deferred        libpthread.so.0
+ELF         7f44b3d42000-    7f44b3d4b000       Deferred        libuuid.so.1
+ELF         7f44b3d4b000-    7f44b3d61000       Deferred        libtasn1.so.6
+ELF         7f44b3d61000-    7f44b3d82000       Deferred        libidn2.so.0
+ELF         7f44b3d82000-    7f44b3d8e000       Deferred        bcrypt.so
+ELF         7f44b3d90000-    7f44b3dc0000       Deferred        ld-linux-x86-64.so.2
+ELF         7f44b3dc0000-    7f44b3dc5000       Deferred        <wine-loader>
+Threads:
+process  tid      prio    name (all IDs are in hex)
+00000020 start.exe
+	00000024    0     
+00000038 services.exe
+	0000003c    0     
+	00000040    0     wine_rpcrt4_server
+	0000004c    0     wine_rpcrt4_io
+	00000070    0     wine_rpcrt4_io
+	000000a4    0     wine_rpcrt4_io
+	000000bc    0     wine_rpcrt4_io
+	000000d0    0     
+	000000f8    0     wine_rpcrt4_io
+00000044 winedevice.exe
+	00000048    0     
+	00000054    0     
+	00000058    0     wine_sechost_service
+	0000005c    0     
+	00000060    0     
+	00000064    0     
+	000000c8    0     
+	000000cc    0     
+00000068 winedevice.exe
+	0000006c    0     
+	00000074    0     
+	00000078    0     wine_sechost_service
+	0000007c    0     
+	00000080    0     
+	00000090    0     
+	00000094    0     
+	00000098    0     
+00000084 explorer.exe
+	00000088    0     
+	000000e4    0     
+	000000e8    0     wine_rpcrt4_server
+0000009c plugplay.exe
+	000000a0    0     
+	000000a8    0     
+	000000ac    0     wine_sechost_service
+	000000b0    0     wine_rpcrt4_server
+	00000120    0     wine_rpcrt4_io
+	00000124    0     wine_threadpool_worker
+000000b4 svchost.exe
+	000000b8    0     
+	000000c0    0     
+	000000c4    0     wine_sechost_service
+000000d4 conhost.exe
+	000000d8    0     
+000000dc (D) Z:\mnt\824d335a-caca-46d9-be55-dcc42ec8aa17\Hobbies\Pokemon-ETSI (1)\Game.exe
+	000000e0    0     
+	00000114    0     wine_xinput_hid_update
+	00000118    0     wine_sechost_device_notify
+	0000011c    0     SDL_joystick
+	00000128    0     wine_mmdevapi_notification
+	0000012c    0     
+	00000130    0 <== rgss
+	00000134   15     audio_client_main
+	00000138   15     audio_client_timer
+	0000013c   15     
+	00000140    0     
+	00000144    0     audio_mewatch
+	00000148    0     winealsa_midi_notify
+	0000014c    0     ruby-timer-thread
+	00000160    0     
+000000f0 rpcss.exe
+	000000f4    0     
+	000000fc    0     
+	00000100    0     wine_sechost_service
+	00000104    0     wine_rpcrt4_server
+	00000108    0     wine_rpcrt4_server
+	0000010c    0     wine_rpcrt4_io
+00000158 conhost.exe
+	0000015c    0     
+System information:
+    Wine build: wine-9.0
+    Platform: x86_64 (guest: i386)
+    Version: Windows 10
+    Host system: Linux
+    Host version: 5.15.0-116-generic
